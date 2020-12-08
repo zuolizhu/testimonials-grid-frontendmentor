@@ -46,6 +46,7 @@ p {
 
 .container {
   padding: 7.1rem 2.4rem;
+  transition: var(--transition) padding;
   @media (min-width: 768px) {
     padding: 12rem 4.8rem;
   }

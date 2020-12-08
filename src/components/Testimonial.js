@@ -38,7 +38,7 @@ const getBeforeCss = (bgcolor) => {
 export default function Testimonial({ testimonial }) {
   
   return (
-    <div className={`testimonial testimonial--${testimonial.bgcolor}`}>
+    <div className={`testimonial testimonial--${testimonial.bgcolor} testimonial--${testimonial.id}`}>
       <div className="testimonial__profile">
         <div className={`testimonial__profile__avatar testimonial__profile__avatar--${testimonial.bgcolor}`}>
           <img src={require(`../assets/image-${testimonial.avatar}.jpg`).default} alt={`${testimonial.avatar} avatar`}/>
