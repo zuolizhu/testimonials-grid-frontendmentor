@@ -6,9 +6,7 @@
   --color-blue-35: hsl(217, 19%, 35%);
   --color-gray-81: hsl(0, 0%, 81%);
   --color-gray-95: hsl(210, 46%, 95%);
-  // Verified Graduate has the same color as the person's name with 50% opacity
-  // Review paragraphs inside the quotations have the same color as well, but are at 70% opacity
-
+  
   // Font Weights
   --weight-mid: 500;
   --weight-semi-bold: 600;
@@ -33,6 +31,7 @@ html, body, #root, .App {
 body {
   margin: 0;
   font-size: 1.3rem;
+  letter-spacing: 0;
   -moz-osx-font-smoothing: grayscale;
   -webkit-font-smoothing: antialiased;
   background-color: var(--color-gray-95);
@@ -53,4 +52,51 @@ p {
   @media (min-width: 1200px) {
     margin: 16.4rem auto;
   }
+}
+
+// Font specs
+.t-h2 {
+  font-size: 2rem;
+  line-height: 2.4rem;
+  font-weight: var(--weight-semi-bold);
+}
+
+.t-body {
+  font-size: 1.3rem;
+  line-height: 1.8rem;
+  font-weight: var(--weight-mid);
+}
+
+.t-name {
+  font-size: 1.3rem;
+  line-height: 1.3rem;
+  font-weight: var(--weight-mid);
+}
+
+.t-title {
+  font-size: 1.1rem;
+  line-height: 1.1rem;
+  font-weight: var(--weight-mid);
+}
+
+// text color
+.t-white {
+  color: var(--color-white);
+}
+
+.t-blue {
+  color: var(--color-blue-35);
+}
+
+.t-light-gray {
+  color: var(--color-gray-95);
+}
+
+// text opacity
+.t-op50 {
+  opacity: .50;
+}
+
+.t-op70 {
+  opacity: .70;
 }
