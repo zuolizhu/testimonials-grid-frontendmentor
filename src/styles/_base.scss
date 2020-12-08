@@ -44,3 +44,13 @@ h3,
 p {
   margin: 0;
 }
+
+.container {
+  margin: 7.1rem auto;
+  @media (min-width: 768px) {
+    margin: 12rem auto;
+  }
+  @media (min-width: 1200px) {
+    margin: 16.4rem auto;
+  }
+}

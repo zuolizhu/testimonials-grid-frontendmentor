@@ -1,9 +1,12 @@
 import './App.scss';
+import TestimonialsGrid from './components/TestimonialsGrid';
 
 function App() {
   return (
     <div className="App">
-      <p>sup</p>
+      <div className="container">
+        <TestimonialsGrid />
+      </div>
     </div>
   );
 }
