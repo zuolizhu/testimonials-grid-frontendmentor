@@ -40,14 +40,14 @@ export default function Testimonial({ testimonial }) {
   return (
     <div className={`testimonial testimonial--${testimonial.bgcolor}`}>
       <div className="testimonial__profile">
-        <div className="testimonial__profile__avatar">
+        <div className={`testimonial__profile__avatar testimonial__profile__avatar--${testimonial.bgcolor}`}>
           <img src={require(`../assets/image-${testimonial.avatar}.jpg`).default} alt={`${testimonial.avatar} avatar`}/>
         </div>
         <h3 className={`testimonial__profile__name ${getNameCss(testimonial.bgcolor)}`}>{testimonial.name}</h3>
-        <p className={`testimonial__profile__name ${getTitleCss(testimonial.bgcolor)}`}>Verified Graduate</p>
+        <p className={`testimonial__profile__title ${getTitleCss(testimonial.bgcolor)}`}>Verified Graduate</p>
       </div>
-      <h2 className={`testimonial__after ${getAfterCss}`}>{testimonial.after}</h2>
-      <p className={`testimonial__before ${getBeforeCss}`}>{testimonial.before}</p>
+      <h2 className={`testimonial__after ${getAfterCss(testimonial.bgcolor)}`}>{testimonial.after}</h2>
+      <p className={`testimonial__before ${getBeforeCss(testimonial.bgcolor)}`}>{testimonial.before}</p>
     </div>
   )
 }

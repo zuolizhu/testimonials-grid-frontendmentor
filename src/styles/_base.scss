@@ -6,7 +6,7 @@
   --color-blue-35: hsl(217, 19%, 35%);
   --color-gray-81: hsl(0, 0%, 81%);
   --color-gray-95: hsl(210, 46%, 95%);
-  
+
   // Font Weights
   --weight-mid: 500;
   --weight-semi-bold: 600;
@@ -45,12 +45,12 @@ p {
 }
 
 .container {
-  margin: 7.1rem auto;
+  padding: 7.1rem 2.4rem;
   @media (min-width: 768px) {
-    margin: 12rem auto;
+    padding: 12rem 4.8rem;
   }
   @media (min-width: 1200px) {
-    margin: 16.4rem auto;
+    padding: 16.4rem 0;
   }
 }
 
